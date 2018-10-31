@@ -24,7 +24,7 @@ class ChotBot():
 
             if question:
                 #print(question)
-                print(random.choice(relative_dict[question]).split('\n')[0].strip(',，"'))
+                print(random.choice(relative_dict[question]).split('\n')[0].strip(',，"'))#这里是防止语料中有不规范的话术，实际上的确存在
 
     def getResponse(self,query):
         return self.match.match(query)
