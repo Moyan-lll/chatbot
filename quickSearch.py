@@ -11,7 +11,7 @@ class QuickSearcher():
 
     def buildInvertedIndex(self,segTitles):
         '''
-        通过文件路径来读取titles，对其中的每一个词的父母编号都存储起来
+        通过文件路径来读取titles，对其中的每一个词的父母编号都存储起来,titles表示问题
         :param path: 文件路径
         :return: 每个单词的父母编号，但是没有return关键字是直接存储在self属性里了
         '''
